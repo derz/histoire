@@ -1,1 +1,4 @@
-export const useNuxtApp = () => ({})
+export const useNuxtApp = () => ({
+  $t: (key) => key,
+  runWithContext: (fn) => fn(),
+})
